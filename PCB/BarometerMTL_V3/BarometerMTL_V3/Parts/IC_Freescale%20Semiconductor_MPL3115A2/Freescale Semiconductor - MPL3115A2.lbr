@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle>
+    <drawing>
+        <grid unitdist="mm" unit="mm"/>
+        <layers>
+            <layer name="Top" color="4" number="1" visible="yes" active="yes" fill="1"/>
+            <layer name="Bottom" color="4" number="16" visible="yes" active="yes" fill="1"/>
+            <layer name="tPlace" color="7" number="21" visible="yes" active="yes" fill="1"/>
+            <layer name="bPlace" color="7" number="22" visible="yes" active="yes" fill="1"/>
+            <layer name="tNames" color="7" number="25" visible="yes" active="yes" fill="1"/>
+            <layer name="bNames" color="7" number="26" visible="yes" active="yes" fill="1"/>
+            <layer name="tValues" color="7" number="27" visible="yes" active="yes" fill="1"/>
+            <layer name="bValues" color="7" number="28" visible="yes" active="yes" fill="1"/>
+            <layer name="tStop" color="7" number="29" visible="yes" active="yes" fill="1"/>
+            <layer name="bStop" color="7" number="30" visible="yes" active="yes" fill="1"/>
+            <layer name="tCream" color="7" number="31" visible="yes" active="yes" fill="1"/>
+            <layer name="bCream" color="7" number="32" visible="yes" active="yes" fill="1"/>
+            <layer name="tKeepout" color="4" number="39" visible="yes" active="yes" fill="1"/>
+            <layer name="bKeepout" color="4" number="40" visible="yes" active="yes" fill="1"/>
+            <layer name="tRestrict" color="0" number="41" visible="yes" active="yes" fill="1"/>
+            <layer name="bRestrict" color="0" number="42" visible="yes" active="yes" fill="1"/>
+            <layer name="tDocu" color="7" number="51" visible="yes" active="yes" fill="1"/>
+            <layer name="bDocu" color="7" number="52" visible="yes" active="yes" fill="1"/>
+            <layer name="Nets" color="2" number="91" visible="yes" active="yes" fill="1"/>
+            <layer name="Busses" color="1" number="92" visible="yes" active="yes" fill="1"/>
+            <layer name="Pins" color="2" number="93" visible="yes" active="yes" fill="1"/>
+            <layer name="Symbols" color="4" number="94" visible="yes" active="yes" fill="1"/>
+            <layer name="Names" color="7" number="95" visible="yes" active="yes" fill="1"/>
+            <layer name="Values" color="7" number="96" visible="yes" active="yes" fill="1"/>
+            <layer name="Info" color="7" number="97" visible="yes" active="yes" fill="1"/>
+            <layer name="Guide" color="6" number="98" visible="yes" active="yes" fill="1"/>
+        </layers>
+        <library name="Upverter Library">
+            <description>Upverter Parts Library
+
+Created by Upverter.com</description>
+            <packages>
+                <package name="FREESCALE_SEMICONDUCTOR_MPL3115A2_0">
+                    <description>FRES-MPL3115A2-8</description>
+                    <wire layer="51" y2="2.5" width="0.1" x2="1.5" y1="-2.5" x1="1.5"/>
+                    <wire layer="51" y2="-2.5" width="0.1" x2="1.5" y1="-2.5" x1="-1.5"/>
+                    <wire layer="51" y2="0.5" width="0.1" x2="-1.5" y1="-2.5" x1="-1.5"/>
+                    <wire layer="51" y2="2.5" width="0.1" x2="-1.5" y1="0.5" x1="-1.5"/>
+                    <wire layer="51" y2="2.5" width="0.1" x2="1.5" y1="2.5" x1="-1.5"/>
+                    <wire layer="39" y2="2.6" width="0.1" x2="-1.7" y1="-2.6" x1="-1.7"/>
+                    <wire layer="39" y2="2.6" width="0.1" x2="1.7" y1="2.6" x1="-1.7"/>
+                    <wire layer="39" y2="-2.6" width="0.1" x2="1.7" y1="2.6" x1="1.7"/>
+                    <wire layer="39" y2="-2.6" width="0.1" x2="-1.7" y1="-2.6" x1="1.7"/>
+                    <text layer="25" align="bottom-left" y="2.6" x="-3.275" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="1.875" x="-2.15" layer="21" radius="0.125" width="0.25"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="0.55" dy="1.05" y="1.875" x="-1.075" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="0" dx="0.55" dy="1.05" y="0.625" x="-1.075" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="0" dx="0.55" dy="1.05" y="-0.625" x="-1.075" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="0" dx="0.55" dy="1.05" y="-1.875" x="-1.075" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="0" dx="0.55" dy="1.05" y="-1.875" x="1.075" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="0" dx="0.55" dy="1.05" y="-0.625" x="1.075" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="0" dx="0.55" dy="1.05" y="0.625" x="1.075" rot="R270" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="0" dx="0.55" dy="1.05" y="1.875" x="1.075" rot="R270" cream="yes"/>
+                </package>
+            </packages>
+            <symbols>
+                <symbol name="FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0">
+                    <description>FRES-MPL3115A2-8</description>
+                    <wire layer="94" y2="-5.08" width="0.508" x2="0.0" y1="-22.86" x1="0.0"/>
+                    <wire layer="94" y2="-5.08" width="0.508" x2="20.32" y1="-5.08" x1="0.0"/>
+                    <wire layer="94" y2="-22.86" width="0.508" x2="20.32" y1="-5.08" x1="20.32"/>
+                    <wire layer="94" y2="-22.86" width="0.508" x2="0.0" y1="-22.86" x1="20.32"/>
+                    <wire layer="94" y2="-17.78" width="0.15" x2="0.0" y1="-17.78" x1="0.0"/>
+                    <wire layer="94" y2="-15.24" width="0.15" x2="20.32" y1="-15.24" x1="20.32"/>
+                    <wire layer="94" y2="-20.32" width="0.15" x2="20.32" y1="-20.32" x1="20.32"/>
+                    <wire layer="94" y2="-20.32" width="0.15" x2="0.0" y1="-20.32" x1="0.0"/>
+                    <wire layer="94" y2="-10.16" width="0.15" x2="20.32" y1="-10.16" x1="20.32"/>
+                    <wire layer="94" y2="-7.62" width="0.15" x2="20.32" y1="-7.62" x1="20.32"/>
+                    <wire layer="94" y2="-10.16" width="0.15" x2="0.0" y1="-10.16" x1="0.0"/>
+                    <wire layer="94" y2="-7.62" width="0.15" x2="0.0" y1="-7.62" x1="0.0"/>
+                    <text layer="95" align="top-left" y="-2.54" x="0.0" rot="R0" size="2.54">&gt;NAME</text>
+                    <text layer="95" align="top-left" y="-27.94" x="0.0" rot="R0" size="2.54">MPL3115A2</text>
+                    <pin direction="pwr" name="VDD" visible="both" length="middle" y="-17.78" x="-5.08"/>
+                    <pin direction="pas" name="CAP" visible="both" length="middle" y="-15.24" x="25.4" rot="R180"/>
+                    <pin direction="pwr" name="GND" visible="both" length="middle" y="-20.32" x="25.4" rot="R180"/>
+                    <pin direction="pwr" name="VDDIO" visible="both" length="middle" y="-20.32" x="-5.08"/>
+                    <pin direction="out" name="INT2" visible="both" length="middle" y="-10.16" x="25.4" rot="R180"/>
+                    <pin direction="out" name="INT1" visible="both" length="middle" y="-7.62" x="25.4" rot="R180"/>
+                    <pin direction="io" name="SDA" visible="both" length="middle" y="-10.16" x="-5.08"/>
+                    <pin direction="in" name="SCL" visible="both" length="middle" y="-7.62" x="-5.08"/>
+                </symbol>
+            </symbols>
+            <devicesets>
+                <deviceset prefix="U" name="FREESCALE_SEMICONDUCTOR_MPL3115A2">
+                    <description>FRES-MPL3115A2-8</description>
+                    <gates>
+                        <gate name="G$0" symbol="FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" x="0"/>
+                    </gates>
+                    <devices>
+                        <device name="FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" package="FREESCALE_SEMICONDUCTOR_MPL3115A2_0">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="VDD"/>
+                                <connect gate="G$0" pad="2" pin="CAP"/>
+                                <connect gate="G$0" pad="3" pin="GND"/>
+                                <connect gate="G$0" pad="4" pin="VDDIO"/>
+                                <connect gate="G$0" pad="5" pin="INT2"/>
+                                <connect gate="G$0" pad="6" pin="INT1"/>
+                                <connect gate="G$0" pad="7" pin="SDA"/>
+                                <connect gate="G$0" pad="8" pin="SCL"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="ciiva_ids" value="1172243"/>
+                                    <attribute name="Package_Version" value="Rev. O"/>
+                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
+                                    <attribute name="vault_guid" value="C9CA789F-172F-4FBE-A7EA-5C936E43DE32"/>
+                                    <attribute name="fSCL20_pF" value="4 MHz Max."/>
+                                    <attribute name="Mounting_Technology" value="Surface Mount"/>
+                                    <attribute name="MPN" value="MPL3115A2"/>
+                                    <attribute name="Component_Link_1_URL" value="http://www.freescale.com/"/>
+                                    <attribute name="imported" value="yes"/>
+                                    <attribute name="VDDIO" value="1.62 to 3.6 V"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="import_ts" value="1521845373"/>
+                                    <attribute name="Datasheet_Version" value="Rev. 3.0"/>
+                                    <attribute name="Packing" value="Tray"/>
+                                    <attribute name="Package_Description" value="8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm"/>
+                                    <attribute name="datasheet" value="http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf"/>
+                                    <attribute name="fSCL400_pF" value="400 KHz Max."/>
+                                    <attribute name="vault_revision" value="13F1D4E8-B129-4F1C-B772-6A98733F3276"/>
+                                    <attribute name="footprint_variant_name_0" value="Manufacturer Recommended"/>
+                                    <attribute name="release_date" value="1435138815"/>
+                                    <attribute name="imported_from" value="vault"/>
+                                    <attribute name="rohs" value="Yes"/>
+                                    <attribute name="Component_Link_3_Description" value="Package Specification"/>
+                                    <attribute name="Operating_Temperature_Range" value="-40 to 85 degC"/>
+                                    <attribute name="pin_0_0_7_inside_edge" value="clock"/>
+                                    <attribute name="MF" value="Freescale Semiconductor"/>
+                                    <attribute name="Component_Link_3_URL" value="http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf"/>
+                                    <attribute name="VDD" value="1.95 to 3.6 V"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                    </devices>
+                </deviceset>
+            </devicesets>
+        </library>
+    </drawing>
+</eagle>

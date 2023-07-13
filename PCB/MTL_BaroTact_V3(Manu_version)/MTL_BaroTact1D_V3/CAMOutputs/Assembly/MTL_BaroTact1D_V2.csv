@@ -1,0 +1,19 @@
+,,,1D,,,
+Qty,Name,Price(?),Link,Min order Qty,Note,
+1,PINHD-1X9,0.647,https://uk.rs-online.com/web/p/pcb-headers/0453224 ,10,,0.647
+1,CD74HC4067M96,0.855,https://uk.rs-online.com/web/p/multiplexer-demultiplexer-ics/6622577 ,10,,0.855
+16,MPL3115A2,8.54,https://uk.rs-online.com/web/p/pressure-sensor-ics/7500841,1,"If ordering 490 pieces or more, the price is ?4.785",136.64
+1,4.7K RR0603,0.022,https://uk.rs-online.com/web/p/thermistor-ics/0110510,25,,0.022
+1,10uF CC0603,0.243,https://uk.rs-online.com/web/p/mlccs-multilayer-ceramic-capacitors/8151377 ,25,,0.243
+1,100nF CC0603,0.243,https://uk.rs-online.com/web/p/mlccs-multilayer-ceramic-capacitors/8151377 ,25,,0.243
+,Est Price/set,138.65,,,,
+,,,,,,
+,,,2D,,,
+Qty,Name,Price(?),Link,Min order Qty,Note,
+1,PINHD-1X9,0.647,https://uk.rs-online.com/web/p/pcb-headers/0453224 ,10,,0.647
+1,CD74HC4067M96,0.855,https://uk.rs-online.com/web/p/multiplexer-demultiplexer-ics/6622577 ,10,,0.855
+16,MPL3115A2,8.54,https://uk.rs-online.com/web/p/pressure-sensor-ics/7500841,1,"If ordering 490 pieces or more, the price is ?4.785",136.64
+1,4.7K RR0603,0.022,https://uk.rs-online.com/web/p/thermistor-ics/0110510,25,,0.022
+1,10uF CC0402,0.131,https://uk.rs-online.com/web/p/mlccs-multilayer-ceramic-capacitors/8467271,25,,0.131
+1,100nF CC0402,0.041,https://uk.rs-online.com/web/p/mlccs-multilayer-ceramic-capacitors/1034089,50,,0.041
+,Est Price/set,138.336,,,,

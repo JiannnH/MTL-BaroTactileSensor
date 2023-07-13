@@ -1,0 +1,1639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.6.2">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
+<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
+<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
+</layers>
+<board>
+<plain>
+<wire x1="0" y1="0" x2="80" y2="0" width="0" layer="20"/>
+<wire x1="80" y1="0" x2="80" y2="80" width="0" layer="20"/>
+<wire x1="80" y1="80" x2="0" y2="80" width="0" layer="20"/>
+<wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
+</plain>
+<libraries>
+<library name="eagle-ltspice" urn="urn:adsk.eagle:library:217">
+<description>Default symbols for import LTspice schematics&lt;p&gt;
+2012-10-29 alf@cadsoft.de&lt;br&gt;</description>
+<packages>
+<package name="C0603" urn="urn:adsk.eagle:footprint:13198/1" library_version="3">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="C0805" urn="urn:adsk.eagle:footprint:13199/1" library_version="3">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="R0603" urn="urn:adsk.eagle:footprint:13235/1" library_version="3">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
+<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="C0603" urn="urn:adsk.eagle:package:13262/1" type="box" library_version="3">
+<description>CAPACITOR</description>
+<packageinstances>
+<packageinstance name="C0603"/>
+</packageinstances>
+</package3d>
+<package3d name="C0805" urn="urn:adsk.eagle:package:13265/1" type="box" library_version="3">
+<description>CAPACITOR</description>
+<packageinstances>
+<packageinstance name="C0805"/>
+</packageinstances>
+</package3d>
+<package3d name="R0603" urn="urn:adsk.eagle:package:13302/1" type="box" library_version="3">
+<description>RESISTOR</description>
+<packageinstances>
+<packageinstance name="R0603"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="CD74HC4067M96">
+<description>&lt;High Speed CMOS 16-Channel Analog Multiplexer/Demultiplexer&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SOIC127P1030X265-24N">
+<description>&lt;b&gt;CD74HC4067M96&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-4.725" y="6.985" dx="1.95" dy="0.65" layer="1"/>
+<smd name="2" x="-4.725" y="5.715" dx="1.95" dy="0.65" layer="1"/>
+<smd name="3" x="-4.725" y="4.445" dx="1.95" dy="0.65" layer="1"/>
+<smd name="4" x="-4.725" y="3.175" dx="1.95" dy="0.65" layer="1"/>
+<smd name="5" x="-4.725" y="1.905" dx="1.95" dy="0.65" layer="1"/>
+<smd name="6" x="-4.725" y="0.635" dx="1.95" dy="0.65" layer="1"/>
+<smd name="7" x="-4.725" y="-0.635" dx="1.95" dy="0.65" layer="1"/>
+<smd name="8" x="-4.725" y="-1.905" dx="1.95" dy="0.65" layer="1"/>
+<smd name="9" x="-4.725" y="-3.175" dx="1.95" dy="0.65" layer="1"/>
+<smd name="10" x="-4.725" y="-4.445" dx="1.95" dy="0.65" layer="1"/>
+<smd name="11" x="-4.725" y="-5.715" dx="1.95" dy="0.65" layer="1"/>
+<smd name="12" x="-4.725" y="-6.985" dx="1.95" dy="0.65" layer="1"/>
+<smd name="13" x="4.725" y="-6.985" dx="1.95" dy="0.65" layer="1"/>
+<smd name="14" x="4.725" y="-5.715" dx="1.95" dy="0.65" layer="1"/>
+<smd name="15" x="4.725" y="-4.445" dx="1.95" dy="0.65" layer="1"/>
+<smd name="16" x="4.725" y="-3.175" dx="1.95" dy="0.65" layer="1"/>
+<smd name="17" x="4.725" y="-1.905" dx="1.95" dy="0.65" layer="1"/>
+<smd name="18" x="4.725" y="-0.635" dx="1.95" dy="0.65" layer="1"/>
+<smd name="19" x="4.725" y="0.635" dx="1.95" dy="0.65" layer="1"/>
+<smd name="20" x="4.725" y="1.905" dx="1.95" dy="0.65" layer="1"/>
+<smd name="21" x="4.725" y="3.175" dx="1.95" dy="0.65" layer="1"/>
+<smd name="22" x="4.725" y="4.445" dx="1.95" dy="0.65" layer="1"/>
+<smd name="23" x="4.725" y="5.715" dx="1.95" dy="0.65" layer="1"/>
+<smd name="24" x="4.725" y="6.985" dx="1.95" dy="0.65" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-5.95" y1="8.05" x2="5.95" y2="8.05" width="0.05" layer="51"/>
+<wire x1="5.95" y1="8.05" x2="5.95" y2="-8.05" width="0.05" layer="51"/>
+<wire x1="5.95" y1="-8.05" x2="-5.95" y2="-8.05" width="0.05" layer="51"/>
+<wire x1="-5.95" y1="-8.05" x2="-5.95" y2="8.05" width="0.05" layer="51"/>
+<wire x1="-3.75" y1="7.7" x2="3.75" y2="7.7" width="0.1" layer="51"/>
+<wire x1="3.75" y1="7.7" x2="3.75" y2="-7.7" width="0.1" layer="51"/>
+<wire x1="3.75" y1="-7.7" x2="-3.75" y2="-7.7" width="0.1" layer="51"/>
+<wire x1="-3.75" y1="-7.7" x2="-3.75" y2="7.7" width="0.1" layer="51"/>
+<wire x1="-3.75" y1="6.43" x2="-2.48" y2="7.7" width="0.1" layer="51"/>
+<wire x1="-3.4" y1="7.7" x2="3.4" y2="7.7" width="0.2" layer="21"/>
+<wire x1="3.4" y1="7.7" x2="3.4" y2="-7.7" width="0.2" layer="21"/>
+<wire x1="3.4" y1="-7.7" x2="-3.4" y2="-7.7" width="0.2" layer="21"/>
+<wire x1="-3.4" y1="-7.7" x2="-3.4" y2="7.7" width="0.2" layer="21"/>
+<wire x1="-5.7" y1="7.66" x2="-3.75" y2="7.66" width="0.2" layer="21"/>
+</package>
+</packages>
+</library>
+<library name="pinhead" urn="urn:adsk.eagle:library:325">
+<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1X09" urn="urn:adsk.eagle:footprint:22376/1" library_version="4">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="0.635" x2="6.985" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="8.255" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="8.255" y1="1.27" x2="8.89" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="0.635" x2="8.89" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="-0.635" x2="8.255" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="8.255" y1="-1.27" x2="6.985" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="-1.27" x2="6.35" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="0.635" x2="-5.715" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="1.27" x2="-4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.27" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-0.635" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="-5.715" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="-1.27" x2="-6.35" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-10.795" y1="1.27" x2="-9.525" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-9.525" y1="1.27" x2="-8.89" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="0.635" x2="-8.89" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="-0.635" x2="-9.525" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="0.635" x2="-8.255" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-8.255" y1="1.27" x2="-6.985" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-6.35" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="0.635" x2="-6.35" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="-0.635" x2="-6.985" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="-1.27" x2="-8.255" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-8.255" y1="-1.27" x2="-8.89" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-11.43" y1="0.635" x2="-11.43" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-10.795" y1="1.27" x2="-11.43" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-11.43" y1="-0.635" x2="-10.795" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-9.525" y1="-1.27" x2="-10.795" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="9.525" y1="1.27" x2="10.795" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="10.795" y1="1.27" x2="11.43" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="11.43" y1="0.635" x2="11.43" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="11.43" y1="-0.635" x2="10.795" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="9.525" y1="1.27" x2="8.89" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="-0.635" x2="9.525" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="10.795" y1="-1.27" x2="9.525" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="-10.16" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="-7.62" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="-5.08" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="4" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="5" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="6" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="7" x="5.08" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="8" x="7.62" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="9" x="10.16" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-11.5062" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-11.43" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
+<rectangle x1="-5.334" y1="-0.254" x2="-4.826" y2="0.254" layer="51"/>
+<rectangle x1="-7.874" y1="-0.254" x2="-7.366" y2="0.254" layer="51"/>
+<rectangle x1="-10.414" y1="-0.254" x2="-9.906" y2="0.254" layer="51"/>
+<rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="1X09" urn="urn:adsk.eagle:package:22483/2" type="model" library_version="4">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="1X09"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="Freescale Semiconductor - MPL3115A2">
+<description>Upverter Parts Library
+
+Created by Upverter.com</description>
+<packages>
+<package name="FREESCALE_SEMICONDUCTOR_MPL3115A2_0">
+<description>FRES-MPL3115A2-8</description>
+<wire x1="1.5" y1="-2.5" x2="1.5" y2="2.5" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="-2.5" x2="1.5" y2="-2.5" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="-2.5" x2="-1.5" y2="0.5" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="0.5" x2="-1.5" y2="2.5" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="2.5" x2="1.5" y2="2.5" width="0.1" layer="51"/>
+<wire x1="-1.7" y1="-2.6" x2="-1.7" y2="2.6" width="0.1" layer="39"/>
+<wire x1="-1.7" y1="2.6" x2="1.7" y2="2.6" width="0.1" layer="39"/>
+<wire x1="1.7" y1="2.6" x2="1.7" y2="-2.6" width="0.1" layer="39"/>
+<wire x1="1.7" y1="-2.6" x2="-1.7" y2="-2.6" width="0.1" layer="39"/>
+<text x="-3.275" y="2.6" size="1" layer="25">&gt;NAME</text>
+<circle x="-2.15" y="1.875" radius="0.125" width="0.25" layer="21"/>
+<smd name="1" x="-1.075" y="1.875" dx="0.55" dy="1.05" layer="1" rot="R270"/>
+<smd name="2" x="-1.075" y="0.625" dx="0.55" dy="1.05" layer="1" rot="R270"/>
+<smd name="3" x="-1.075" y="-0.625" dx="0.55" dy="1.05" layer="1" rot="R270"/>
+<smd name="4" x="-1.075" y="-1.875" dx="0.55" dy="1.05" layer="1" rot="R270"/>
+<smd name="5" x="1.075" y="-1.875" dx="0.55" dy="1.05" layer="1" rot="R270"/>
+<smd name="6" x="1.075" y="-0.625" dx="0.55" dy="1.05" layer="1" rot="R270"/>
+<smd name="7" x="1.075" y="0.625" dx="0.55" dy="1.05" layer="1" rot="R270"/>
+<smd name="8" x="1.075" y="1.875" dx="0.55" dy="1.05" layer="1" rot="R270"/>
+</package>
+</packages>
+</library>
+</libraries>
+<attributes>
+</attributes>
+<variantdefs>
+</variantdefs>
+<classes>
+<class number="0" name="default" width="0" drill="0">
+</class>
+<class number="1" name="SDA" width="0" drill="0">
+</class>
+<class number="2" name="SCL" width="0" drill="0">
+</class>
+<class number="3" name="S0" width="0" drill="0">
+</class>
+<class number="4" name="S1" width="0" drill="0">
+</class>
+<class number="5" name="S2" width="0" drill="0">
+</class>
+<class number="6" name="S3" width="0" drill="0">
+</class>
+<class number="7" name="EN" width="0" drill="0">
+</class>
+</classes>
+<designrules name="default">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+The default Design Rules have been set to cover
+a wide range of applications. Your particular design
+may have different requirements, so please make the
+necessary adjustments and save your customized
+design rules under a new name.</description>
+<param name="layerSetup" value="(1*16)"/>
+<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
+<param name="mdViaViaSameLayer" value="6mil"/>
+<param name="mnLayersViaInSmd" value="2"/>
+<param name="mdCopperDimension" value="40mil"/>
+<param name="mdDrill" value="6mil"/>
+<param name="mdSmdStop" value="0mil"/>
+<param name="msWidth" value="6mil"/>
+<param name="msDrill" value="0.35mm"/>
+<param name="msMicroVia" value="9.99mm"/>
+<param name="msBlindViaRatio" value="0.5"/>
+<param name="rvPadTop" value="0.25"/>
+<param name="rvPadInner" value="0.25"/>
+<param name="rvPadBottom" value="0.25"/>
+<param name="rvViaOuter" value="0.25"/>
+<param name="rvViaInner" value="0.25"/>
+<param name="rvMicroViaOuter" value="0.25"/>
+<param name="rvMicroViaInner" value="0.25"/>
+<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMaxPadTop" value="20mil"/>
+<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMaxPadInner" value="20mil"/>
+<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMaxPadBottom" value="20mil"/>
+<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMaxViaOuter" value="20mil"/>
+<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMaxViaInner" value="20mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMaxMicroViaOuter" value="20mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
+<param name="rlMaxMicroViaInner" value="20mil"/>
+<param name="psTop" value="-1"/>
+<param name="psBottom" value="-1"/>
+<param name="psFirst" value="-1"/>
+<param name="psElongationLong" value="100"/>
+<param name="psElongationOffset" value="100"/>
+<param name="mvStopFrame" value="1"/>
+<param name="mvCreamFrame" value="0"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinCreamFrame" value="0mil"/>
+<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
+<param name="srRoundness" value="0"/>
+<param name="srMinRoundness" value="0mil"/>
+<param name="srMaxRoundness" value="0mil"/>
+<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalsForVias" value="0"/>
+<param name="dpMaxLengthDifference" value="10mm"/>
+<param name="dpGapFactor" value="2.5"/>
+<param name="checkAngle" value="0"/>
+<param name="checkFont" value="1"/>
+<param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
+<param name="useDiameter" value="13"/>
+<param name="maxErrors" value="50"/>
+</designrules>
+<autorouter>
+<pass name="Default">
+<param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
+<param name="tpViaShape" value="round"/>
+<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.2" value="0"/>
+<param name="PrefDir.3" value="0"/>
+<param name="PrefDir.4" value="0"/>
+<param name="PrefDir.5" value="0"/>
+<param name="PrefDir.6" value="0"/>
+<param name="PrefDir.7" value="0"/>
+<param name="PrefDir.8" value="0"/>
+<param name="PrefDir.9" value="0"/>
+<param name="PrefDir.10" value="0"/>
+<param name="PrefDir.11" value="0"/>
+<param name="PrefDir.12" value="0"/>
+<param name="PrefDir.13" value="0"/>
+<param name="PrefDir.14" value="0"/>
+<param name="PrefDir.15" value="0"/>
+<param name="PrefDir.16" value="a"/>
+<param name="cfVia" value="8"/>
+<param name="cfNonPref" value="5"/>
+<param name="cfChangeDir" value="2"/>
+<param name="cfOrthStep" value="2"/>
+<param name="cfDiagStep" value="3"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="1"/>
+<param name="cfMalusStep" value="1"/>
+<param name="cfPadImpact" value="4"/>
+<param name="cfSmdImpact" value="4"/>
+<param name="cfBusImpact" value="0"/>
+<param name="cfHugging" value="3"/>
+<param name="cfAvoid" value="4"/>
+<param name="cfPolygon" value="10"/>
+<param name="cfBase.1" value="0"/>
+<param name="cfBase.2" value="1"/>
+<param name="cfBase.3" value="1"/>
+<param name="cfBase.4" value="1"/>
+<param name="cfBase.5" value="1"/>
+<param name="cfBase.6" value="1"/>
+<param name="cfBase.7" value="1"/>
+<param name="cfBase.8" value="1"/>
+<param name="cfBase.9" value="1"/>
+<param name="cfBase.10" value="1"/>
+<param name="cfBase.11" value="1"/>
+<param name="cfBase.12" value="1"/>
+<param name="cfBase.13" value="1"/>
+<param name="cfBase.14" value="1"/>
+<param name="cfBase.15" value="1"/>
+<param name="cfBase.16" value="0"/>
+<param name="mnVias" value="20"/>
+<param name="mnSegments" value="9999"/>
+<param name="mnExtdSteps" value="9999"/>
+<param name="mnRipupLevel" value="10"/>
+<param name="mnRipupSteps" value="100"/>
+<param name="mnRipupTotal" value="100"/>
+</pass>
+<pass name="Follow-me" refer="Default" active="yes">
+</pass>
+<pass name="Busses" refer="Default" active="yes">
+<param name="cfNonPref" value="4"/>
+<param name="cfBusImpact" value="4"/>
+<param name="cfHugging" value="0"/>
+<param name="mnVias" value="0"/>
+</pass>
+<pass name="Route" refer="Default" active="yes">
+</pass>
+<pass name="Optimize1" refer="Default" active="yes">
+<param name="cfVia" value="99"/>
+<param name="cfExtdStep" value="10"/>
+<param name="cfHugging" value="1"/>
+<param name="mnExtdSteps" value="1"/>
+<param name="mnRipupLevel" value="0"/>
+</pass>
+<pass name="Optimize2" refer="Optimize1" active="yes">
+<param name="cfNonPref" value="0"/>
+<param name="cfChangeDir" value="6"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="2"/>
+<param name="cfMalusStep" value="2"/>
+<param name="cfPadImpact" value="2"/>
+<param name="cfSmdImpact" value="2"/>
+<param name="cfHugging" value="0"/>
+</pass>
+<pass name="Optimize3" refer="Optimize2" active="yes">
+<param name="cfChangeDir" value="8"/>
+<param name="cfPadImpact" value="0"/>
+<param name="cfSmdImpact" value="0"/>
+</pass>
+<pass name="Optimize4" refer="Optimize3" active="yes">
+<param name="cfChangeDir" value="25"/>
+</pass>
+</autorouter>
+<elements>
+<element name="C1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="10uF" x="-41.91" y="74.93" smashed="yes">
+<attribute name="NAME" x="-42.545" y="75.565" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-42.545" y="73.025" size="1.27" layer="27"/>
+</element>
+<element name="C2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="-17.78" y="62.23" smashed="yes">
+<attribute name="NAME" x="-19.05" y="63.5" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-19.05" y="59.69" size="1.27" layer="27"/>
+</element>
+<element name="C5" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="-24.13" y="68.58" smashed="yes">
+<attribute name="NAME" x="-25.4" y="69.85" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-25.4" y="66.04" size="1.27" layer="27"/>
+</element>
+<element name="C3" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="-24.13" y="62.23" smashed="yes">
+<attribute name="NAME" x="-25.4" y="63.5" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-25.4" y="59.69" size="1.27" layer="27"/>
+</element>
+<element name="C6" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="-30.48" y="68.58" smashed="yes">
+<attribute name="NAME" x="-31.75" y="69.85" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-31.75" y="66.04" size="1.27" layer="27"/>
+</element>
+<element name="C4" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="-30.48" y="62.23" smashed="yes">
+<attribute name="NAME" x="-31.75" y="63.5" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-31.75" y="59.69" size="1.27" layer="27"/>
+</element>
+<element name="IC1" library="CD74HC4067M96" package="SOIC127P1030X265-24N" value="CD74HC4067M96" x="54.61" y="66.04" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="High Speed CMOS 16-Channel Analog Multiplexer/Demultiplexer" x="33.02" y="109.22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="2.65mm" x="33.02" y="109.22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" x="33.02" y="109.22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="CD74HC4067M96" x="33.02" y="109.22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="595-CD74HC4067M96" x="33.02" y="109.22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD74HC4067M96?qs=xFfolx0DHx0XT7d9xTTZBA%3D%3D" x="33.02" y="109.22" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="54.61" y="66.04" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="54.61" y="66.04" size="1.27" layer="27" rot="R180" align="center"/>
+</element>
+<element name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X09" package3d_urn="urn:adsk.eagle:package:22483/2" value="" x="40.64" y="76.2" smashed="yes">
+<attribute name="NAME" x="29.1338" y="78.0288" size="1.27" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="13" x="66.04" y="2.54" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="29.21" y="73.025" size="1.27" layer="27"/>
+</element>
+<element name="P1" library="Freescale Semiconductor - MPL3115A2" package="FREESCALE_SEMICONDUCTOR_MPL3115A2_0" value="FREESCALE_SEMICONDUCTOR_MPL3115A2FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" x="10.16" y="50.8" smashed="yes">
+<attribute name="CIIVA_IDS" value="1172243" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.freescale.com/" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 3.0" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL20_PF" value="4 MHz Max." x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL400_PF" value="400 KHz Max." x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED" value="yes" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="vault" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORT_TS" value="1521845373" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Freescale Semiconductor" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MPL3115A2" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="6.885" y="53.4" size="1" layer="25"/>
+<attribute name="OPERATING_TEMPERATURE_RANGE" value="-40 to 85 degC" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_DESCRIPTION" value="8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_VERSION" value="Rev. O" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="PACKING" value="Tray" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="PIN_0_0_7_INSIDE_EDGE" value="clock" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="U" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="RELEASE_DATE" value="1435138815" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_GUID" value="C9CA789F-172F-4FBE-A7EA-5C936E43DE32" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_REVISION" value="13F1D4E8-B129-4F1C-B772-6A98733F3276" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="VDD" value="1.95 to 3.6 V" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="VDDIO" value="1.62 to 3.6 V" x="60.96" y="12.7" size="1.778" layer="27" display="off"/>
+</element>
+<element name="P4" library="Freescale Semiconductor - MPL3115A2" package="FREESCALE_SEMICONDUCTOR_MPL3115A2_0" value="FREESCALE_SEMICONDUCTOR_MPL3115A2FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" x="66.04" y="49.53" smashed="yes">
+<attribute name="CIIVA_IDS" value="1172243" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.freescale.com/" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 3.0" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL20_PF" value="4 MHz Max." x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL400_PF" value="400 KHz Max." x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED" value="yes" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="vault" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORT_TS" value="1521845373" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Freescale Semiconductor" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MPL3115A2" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="62.765" y="52.13" size="1" layer="25"/>
+<attribute name="OPERATING_TEMPERATURE_RANGE" value="-40 to 85 degC" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_DESCRIPTION" value="8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_VERSION" value="Rev. O" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="PACKING" value="Tray" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="PIN_0_0_7_INSIDE_EDGE" value="clock" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="U" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="RELEASE_DATE" value="1435138815" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_GUID" value="C9CA789F-172F-4FBE-A7EA-5C936E43DE32" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_REVISION" value="13F1D4E8-B129-4F1C-B772-6A98733F3276" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="VDD" value="1.95 to 3.6 V" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="VDDIO" value="1.62 to 3.6 V" x="106.68" y="-5.08" size="1.778" layer="27" display="off"/>
+</element>
+<element name="P2" library="Freescale Semiconductor - MPL3115A2" package="FREESCALE_SEMICONDUCTOR_MPL3115A2_0" value="FREESCALE_SEMICONDUCTOR_MPL3115A2FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" x="26.67" y="50.8" smashed="yes">
+<attribute name="CIIVA_IDS" value="1172243" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.freescale.com/" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 3.0" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL20_PF" value="4 MHz Max." x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL400_PF" value="400 KHz Max." x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED" value="yes" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="vault" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORT_TS" value="1521845373" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Freescale Semiconductor" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MPL3115A2" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="23.395" y="53.4" size="1" layer="25"/>
+<attribute name="OPERATING_TEMPERATURE_RANGE" value="-40 to 85 degC" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_DESCRIPTION" value="8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_VERSION" value="Rev. O" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="PACKING" value="Tray" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="PIN_0_0_7_INSIDE_EDGE" value="clock" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="U" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="RELEASE_DATE" value="1435138815" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_GUID" value="C9CA789F-172F-4FBE-A7EA-5C936E43DE32" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_REVISION" value="13F1D4E8-B129-4F1C-B772-6A98733F3276" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="VDD" value="1.95 to 3.6 V" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="VDDIO" value="1.62 to 3.6 V" x="83.82" y="12.7" size="1.778" layer="27" display="off"/>
+</element>
+<element name="P3" library="Freescale Semiconductor - MPL3115A2" package="FREESCALE_SEMICONDUCTOR_MPL3115A2_0" value="FREESCALE_SEMICONDUCTOR_MPL3115A2FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" x="46.99" y="52.07" smashed="yes">
+<attribute name="CIIVA_IDS" value="1172243" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.freescale.com/" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 3.0" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL20_PF" value="4 MHz Max." x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL400_PF" value="400 KHz Max." x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED" value="yes" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="vault" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORT_TS" value="1521845373" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Freescale Semiconductor" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MPL3115A2" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="43.715" y="54.67" size="1" layer="25"/>
+<attribute name="OPERATING_TEMPERATURE_RANGE" value="-40 to 85 degC" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_DESCRIPTION" value="8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_VERSION" value="Rev. O" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="PACKING" value="Tray" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="PIN_0_0_7_INSIDE_EDGE" value="clock" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="U" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="RELEASE_DATE" value="1435138815" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_GUID" value="C9CA789F-172F-4FBE-A7EA-5C936E43DE32" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_REVISION" value="13F1D4E8-B129-4F1C-B772-6A98733F3276" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="VDD" value="1.95 to 3.6 V" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="VDDIO" value="1.62 to 3.6 V" x="81.28" y="-2.54" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R5" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="4.7K" x="21.59" y="72.39" smashed="yes">
+<attribute name="NAME" x="20.955" y="73.025" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="38.1" y="-7.62" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="38.1" y="-7.62" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="20.955" y="70.485" size="1.27" layer="27"/>
+</element>
+<element name="R6" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="4.7K" x="21.59" y="64.77" smashed="yes">
+<attribute name="NAME" x="20.955" y="65.405" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="43.18" y="-15.24" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="43.18" y="-15.24" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="20.955" y="62.865" size="1.27" layer="27"/>
+</element>
+<element name="R7" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="R0603" package3d_urn="urn:adsk.eagle:package:13302/1" value="4.7K" x="24.13" y="67.31" smashed="yes">
+<attribute name="NAME" x="23.495" y="67.945" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="50.8" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="50.8" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="23.495" y="65.405" size="1.27" layer="27"/>
+</element>
+<element name="P5" library="Freescale Semiconductor - MPL3115A2" package="FREESCALE_SEMICONDUCTOR_MPL3115A2_0" value="FREESCALE_SEMICONDUCTOR_MPL3115A2FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" x="10.16" y="38.1" smashed="yes">
+<attribute name="CIIVA_IDS" value="1172243" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.freescale.com/" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 3.0" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL20_PF" value="4 MHz Max." x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL400_PF" value="400 KHz Max." x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED" value="yes" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="vault" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORT_TS" value="1521845373" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Freescale Semiconductor" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MPL3115A2" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="6.885" y="40.7" size="1" layer="25"/>
+<attribute name="OPERATING_TEMPERATURE_RANGE" value="-40 to 85 degC" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_DESCRIPTION" value="8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_VERSION" value="Rev. O" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="PACKING" value="Tray" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="PIN_0_0_7_INSIDE_EDGE" value="clock" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="U" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="RELEASE_DATE" value="1435138815" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_GUID" value="C9CA789F-172F-4FBE-A7EA-5C936E43DE32" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_REVISION" value="13F1D4E8-B129-4F1C-B772-6A98733F3276" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="VDD" value="1.95 to 3.6 V" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="VDDIO" value="1.62 to 3.6 V" x="3.81" y="46.99" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C7" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="10uF" x="64.77" y="55.88" smashed="yes">
+<attribute name="NAME" x="64.135" y="56.515" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="58.42" y="78.74" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="58.42" y="78.74" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="64.135" y="53.975" size="1.27" layer="27"/>
+</element>
+<element name="C8" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="67.31" y="69.85" smashed="yes">
+<attribute name="NAME" x="66.04" y="71.12" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="55.88" y="72.39" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="55.88" y="72.39" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="66.04" y="67.31" size="1.27" layer="27"/>
+</element>
+<element name="C9" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="76.2" y="69.85" smashed="yes">
+<attribute name="NAME" x="74.93" y="71.12" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="58.42" y="66.04" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="58.42" y="66.04" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="74.93" y="67.31" size="1.27" layer="27"/>
+</element>
+<element name="P6" library="Freescale Semiconductor - MPL3115A2" package="FREESCALE_SEMICONDUCTOR_MPL3115A2_0" value="FREESCALE_SEMICONDUCTOR_MPL3115A2FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" x="26.67" y="38.1" smashed="yes">
+<attribute name="CIIVA_IDS" value="1172243" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.freescale.com/" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 3.0" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL20_PF" value="4 MHz Max." x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL400_PF" value="400 KHz Max." x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED" value="yes" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="vault" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORT_TS" value="1521845373" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Freescale Semiconductor" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MPL3115A2" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="23.395" y="40.7" size="1" layer="25"/>
+<attribute name="OPERATING_TEMPERATURE_RANGE" value="-40 to 85 degC" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_DESCRIPTION" value="8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_VERSION" value="Rev. O" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="PACKING" value="Tray" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="PIN_0_0_7_INSIDE_EDGE" value="clock" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="U" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="RELEASE_DATE" value="1435138815" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_GUID" value="C9CA789F-172F-4FBE-A7EA-5C936E43DE32" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_REVISION" value="13F1D4E8-B129-4F1C-B772-6A98733F3276" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="VDD" value="1.95 to 3.6 V" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="VDDIO" value="1.62 to 3.6 V" x="7.62" y="27.94" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C10" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="64.77" y="62.23" smashed="yes">
+<attribute name="NAME" x="63.5" y="63.5" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="52.07" y="59.69" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="52.07" y="59.69" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="63.5" y="59.69" size="1.27" layer="27"/>
+</element>
+<element name="P7" library="Freescale Semiconductor - MPL3115A2" package="FREESCALE_SEMICONDUCTOR_MPL3115A2_0" value="FREESCALE_SEMICONDUCTOR_MPL3115A2FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" x="48.26" y="38.1" smashed="yes">
+<attribute name="CIIVA_IDS" value="1172243" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.freescale.com/" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 3.0" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL20_PF" value="4 MHz Max." x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL400_PF" value="400 KHz Max." x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED" value="yes" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="vault" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORT_TS" value="1521845373" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Freescale Semiconductor" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MPL3115A2" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="44.985" y="40.7" size="1" layer="25"/>
+<attribute name="OPERATING_TEMPERATURE_RANGE" value="-40 to 85 degC" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_DESCRIPTION" value="8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_VERSION" value="Rev. O" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="PACKING" value="Tray" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="PIN_0_0_7_INSIDE_EDGE" value="clock" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="U" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="RELEASE_DATE" value="1435138815" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_GUID" value="C9CA789F-172F-4FBE-A7EA-5C936E43DE32" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_REVISION" value="13F1D4E8-B129-4F1C-B772-6A98733F3276" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="VDD" value="1.95 to 3.6 V" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="VDDIO" value="1.62 to 3.6 V" x="16.51" y="21.59" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C11" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="71.12" y="62.23" smashed="yes">
+<attribute name="NAME" x="69.85" y="63.5" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="45.72" y="53.34" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="45.72" y="53.34" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="69.85" y="59.69" size="1.27" layer="27"/>
+</element>
+<element name="P8" library="Freescale Semiconductor - MPL3115A2" package="FREESCALE_SEMICONDUCTOR_MPL3115A2_0" value="FREESCALE_SEMICONDUCTOR_MPL3115A2FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" x="66.04" y="38.1" smashed="yes">
+<attribute name="CIIVA_IDS" value="1172243" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.freescale.com/" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 3.0" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL20_PF" value="4 MHz Max." x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL400_PF" value="400 KHz Max." x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED" value="yes" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="vault" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORT_TS" value="1521845373" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Freescale Semiconductor" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MPL3115A2" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="62.765" y="40.7" size="1" layer="25"/>
+<attribute name="OPERATING_TEMPERATURE_RANGE" value="-40 to 85 degC" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_DESCRIPTION" value="8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_VERSION" value="Rev. O" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="PACKING" value="Tray" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="PIN_0_0_7_INSIDE_EDGE" value="clock" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="U" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="RELEASE_DATE" value="1435138815" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_GUID" value="C9CA789F-172F-4FBE-A7EA-5C936E43DE32" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_REVISION" value="13F1D4E8-B129-4F1C-B772-6A98733F3276" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="VDD" value="1.95 to 3.6 V" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="VDDIO" value="1.62 to 3.6 V" x="40.64" y="22.86" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C12" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="77.47" y="62.23" smashed="yes">
+<attribute name="NAME" x="76.2" y="63.5" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="39.37" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="39.37" y="46.99" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="76.2" y="59.69" size="1.27" layer="27"/>
+</element>
+<element name="P9" library="Freescale Semiconductor - MPL3115A2" package="FREESCALE_SEMICONDUCTOR_MPL3115A2_0" value="FREESCALE_SEMICONDUCTOR_MPL3115A2FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" x="10.16" y="22.86" smashed="yes">
+<attribute name="CIIVA_IDS" value="1172243" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.freescale.com/" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 3.0" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL20_PF" value="4 MHz Max." x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL400_PF" value="400 KHz Max." x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED" value="yes" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="vault" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORT_TS" value="1521845373" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Freescale Semiconductor" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MPL3115A2" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="6.885" y="25.46" size="1" layer="25"/>
+<attribute name="OPERATING_TEMPERATURE_RANGE" value="-40 to 85 degC" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_DESCRIPTION" value="8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_VERSION" value="Rev. O" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="PACKING" value="Tray" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="PIN_0_0_7_INSIDE_EDGE" value="clock" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="U" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="RELEASE_DATE" value="1435138815" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_GUID" value="C9CA789F-172F-4FBE-A7EA-5C936E43DE32" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_REVISION" value="13F1D4E8-B129-4F1C-B772-6A98733F3276" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="VDD" value="1.95 to 3.6 V" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="VDDIO" value="1.62 to 3.6 V" x="3.81" y="31.75" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C13" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="10uF" x="72.39" y="20.32" smashed="yes">
+<attribute name="NAME" x="71.755" y="20.955" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="66.04" y="43.18" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="66.04" y="43.18" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="71.755" y="18.415" size="1.27" layer="27"/>
+</element>
+<element name="C14" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="69.85" y="41.91" smashed="yes">
+<attribute name="NAME" x="68.58" y="43.18" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="58.42" y="44.45" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="58.42" y="44.45" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="68.58" y="39.37" size="1.27" layer="27"/>
+</element>
+<element name="C15" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="76.2" y="41.91" smashed="yes">
+<attribute name="NAME" x="74.93" y="43.18" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="58.42" y="38.1" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="58.42" y="38.1" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="74.93" y="39.37" size="1.27" layer="27"/>
+</element>
+<element name="P10" library="Freescale Semiconductor - MPL3115A2" package="FREESCALE_SEMICONDUCTOR_MPL3115A2_0" value="FREESCALE_SEMICONDUCTOR_MPL3115A2FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" x="26.67" y="22.86" smashed="yes">
+<attribute name="CIIVA_IDS" value="1172243" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.freescale.com/" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 3.0" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL20_PF" value="4 MHz Max." x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL400_PF" value="400 KHz Max." x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED" value="yes" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="vault" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORT_TS" value="1521845373" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Freescale Semiconductor" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MPL3115A2" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="23.395" y="25.46" size="1" layer="25"/>
+<attribute name="OPERATING_TEMPERATURE_RANGE" value="-40 to 85 degC" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_DESCRIPTION" value="8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_VERSION" value="Rev. O" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="PACKING" value="Tray" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="PIN_0_0_7_INSIDE_EDGE" value="clock" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="U" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="RELEASE_DATE" value="1435138815" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_GUID" value="C9CA789F-172F-4FBE-A7EA-5C936E43DE32" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_REVISION" value="13F1D4E8-B129-4F1C-B772-6A98733F3276" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="VDD" value="1.95 to 3.6 V" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+<attribute name="VDDIO" value="1.62 to 3.6 V" x="7.62" y="12.7" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C16" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="64.77" y="34.29" smashed="yes">
+<attribute name="NAME" x="63.5" y="35.56" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="52.07" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="52.07" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="63.5" y="31.75" size="1.27" layer="27"/>
+</element>
+<element name="P11" library="Freescale Semiconductor - MPL3115A2" package="FREESCALE_SEMICONDUCTOR_MPL3115A2_0" value="FREESCALE_SEMICONDUCTOR_MPL3115A2FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" x="48.26" y="22.86" smashed="yes">
+<attribute name="CIIVA_IDS" value="1172243" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.freescale.com/" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 3.0" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL20_PF" value="4 MHz Max." x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL400_PF" value="400 KHz Max." x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED" value="yes" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="vault" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORT_TS" value="1521845373" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Freescale Semiconductor" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MPL3115A2" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="44.985" y="25.46" size="1" layer="25"/>
+<attribute name="OPERATING_TEMPERATURE_RANGE" value="-40 to 85 degC" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_DESCRIPTION" value="8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_VERSION" value="Rev. O" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="PACKING" value="Tray" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="PIN_0_0_7_INSIDE_EDGE" value="clock" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="U" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="RELEASE_DATE" value="1435138815" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_GUID" value="C9CA789F-172F-4FBE-A7EA-5C936E43DE32" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_REVISION" value="13F1D4E8-B129-4F1C-B772-6A98733F3276" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="VDD" value="1.95 to 3.6 V" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="VDDIO" value="1.62 to 3.6 V" x="16.51" y="6.35" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C17" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="71.12" y="34.29" smashed="yes">
+<attribute name="NAME" x="69.85" y="35.56" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="45.72" y="25.4" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="45.72" y="25.4" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="69.85" y="31.75" size="1.27" layer="27"/>
+</element>
+<element name="P12" library="Freescale Semiconductor - MPL3115A2" package="FREESCALE_SEMICONDUCTOR_MPL3115A2_0" value="FREESCALE_SEMICONDUCTOR_MPL3115A2FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" x="68.58" y="22.86" smashed="yes">
+<attribute name="CIIVA_IDS" value="1172243" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.freescale.com/" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 3.0" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL20_PF" value="4 MHz Max." x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL400_PF" value="400 KHz Max." x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED" value="yes" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="vault" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORT_TS" value="1521845373" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Freescale Semiconductor" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MPL3115A2" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="65.305" y="25.46" size="1" layer="25"/>
+<attribute name="OPERATING_TEMPERATURE_RANGE" value="-40 to 85 degC" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_DESCRIPTION" value="8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_VERSION" value="Rev. O" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="PACKING" value="Tray" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="PIN_0_0_7_INSIDE_EDGE" value="clock" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="U" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="RELEASE_DATE" value="1435138815" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_GUID" value="C9CA789F-172F-4FBE-A7EA-5C936E43DE32" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_REVISION" value="13F1D4E8-B129-4F1C-B772-6A98733F3276" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="VDD" value="1.95 to 3.6 V" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="VDDIO" value="1.62 to 3.6 V" x="43.18" y="7.62" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C18" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="77.47" y="34.29" smashed="yes">
+<attribute name="NAME" x="76.2" y="35.56" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="39.37" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="39.37" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="76.2" y="31.75" size="1.27" layer="27"/>
+</element>
+<element name="P13" library="Freescale Semiconductor - MPL3115A2" package="FREESCALE_SEMICONDUCTOR_MPL3115A2_0" value="FREESCALE_SEMICONDUCTOR_MPL3115A2FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" x="10.16" y="10.16" smashed="yes">
+<attribute name="CIIVA_IDS" value="1172243" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.freescale.com/" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 3.0" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL20_PF" value="4 MHz Max." x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL400_PF" value="400 KHz Max." x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED" value="yes" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="vault" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORT_TS" value="1521845373" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Freescale Semiconductor" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MPL3115A2" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="6.885" y="12.76" size="1" layer="25"/>
+<attribute name="OPERATING_TEMPERATURE_RANGE" value="-40 to 85 degC" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_DESCRIPTION" value="8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_VERSION" value="Rev. O" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="PACKING" value="Tray" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="PIN_0_0_7_INSIDE_EDGE" value="clock" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="U" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="RELEASE_DATE" value="1435138815" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_GUID" value="C9CA789F-172F-4FBE-A7EA-5C936E43DE32" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_REVISION" value="13F1D4E8-B129-4F1C-B772-6A98733F3276" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="VDD" value="1.95 to 3.6 V" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="VDDIO" value="1.62 to 3.6 V" x="3.81" y="19.05" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C19" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0603" package3d_urn="urn:adsk.eagle:package:13262/1" value="10uF" x="77.47" y="20.32" smashed="yes">
+<attribute name="NAME" x="76.835" y="20.955" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="71.12" y="43.18" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="71.12" y="43.18" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="76.835" y="18.415" size="1.27" layer="27"/>
+</element>
+<element name="C20" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="69.85" y="13.97" smashed="yes">
+<attribute name="NAME" x="68.58" y="15.24" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="58.42" y="16.51" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="58.42" y="16.51" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="68.58" y="11.43" size="1.27" layer="27"/>
+</element>
+<element name="C21" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="76.2" y="11.43" smashed="yes">
+<attribute name="NAME" x="74.93" y="12.7" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="58.42" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="58.42" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="74.93" y="8.89" size="1.27" layer="27"/>
+</element>
+<element name="P14" library="Freescale Semiconductor - MPL3115A2" package="FREESCALE_SEMICONDUCTOR_MPL3115A2_0" value="FREESCALE_SEMICONDUCTOR_MPL3115A2FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" x="26.67" y="10.16" smashed="yes">
+<attribute name="CIIVA_IDS" value="1172243" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.freescale.com/" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 3.0" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL20_PF" value="4 MHz Max." x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL400_PF" value="400 KHz Max." x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED" value="yes" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="vault" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORT_TS" value="1521845373" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Freescale Semiconductor" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MPL3115A2" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="23.395" y="12.76" size="1" layer="25"/>
+<attribute name="OPERATING_TEMPERATURE_RANGE" value="-40 to 85 degC" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_DESCRIPTION" value="8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_VERSION" value="Rev. O" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="PACKING" value="Tray" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="PIN_0_0_7_INSIDE_EDGE" value="clock" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="U" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="RELEASE_DATE" value="1435138815" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_GUID" value="C9CA789F-172F-4FBE-A7EA-5C936E43DE32" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_REVISION" value="13F1D4E8-B129-4F1C-B772-6A98733F3276" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="VDD" value="1.95 to 3.6 V" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="VDDIO" value="1.62 to 3.6 V" x="7.62" y="0" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C22" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="64.77" y="6.35" smashed="yes">
+<attribute name="NAME" x="63.5" y="7.62" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="52.07" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="52.07" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="63.5" y="3.81" size="1.27" layer="27"/>
+</element>
+<element name="P15" library="Freescale Semiconductor - MPL3115A2" package="FREESCALE_SEMICONDUCTOR_MPL3115A2_0" value="FREESCALE_SEMICONDUCTOR_MPL3115A2FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" x="48.26" y="10.16" smashed="yes">
+<attribute name="CIIVA_IDS" value="1172243" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.freescale.com/" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 3.0" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL20_PF" value="4 MHz Max." x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL400_PF" value="400 KHz Max." x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED" value="yes" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="vault" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORT_TS" value="1521845373" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Freescale Semiconductor" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MPL3115A2" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="44.985" y="12.76" size="1" layer="25"/>
+<attribute name="OPERATING_TEMPERATURE_RANGE" value="-40 to 85 degC" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_DESCRIPTION" value="8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_VERSION" value="Rev. O" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="PACKING" value="Tray" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="PIN_0_0_7_INSIDE_EDGE" value="clock" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="U" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="RELEASE_DATE" value="1435138815" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_GUID" value="C9CA789F-172F-4FBE-A7EA-5C936E43DE32" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_REVISION" value="13F1D4E8-B129-4F1C-B772-6A98733F3276" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="VDD" value="1.95 to 3.6 V" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="VDDIO" value="1.62 to 3.6 V" x="16.51" y="-6.35" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C23" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="71.12" y="6.35" smashed="yes">
+<attribute name="NAME" x="69.85" y="7.62" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="45.72" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="45.72" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="69.85" y="3.81" size="1.27" layer="27"/>
+</element>
+<element name="P16" library="Freescale Semiconductor - MPL3115A2" package="FREESCALE_SEMICONDUCTOR_MPL3115A2_0" value="FREESCALE_SEMICONDUCTOR_MPL3115A2FREESCALE_SEMICONDUCTOR_MPL3115A2_0_0" x="68.58" y="10.16" smashed="yes">
+<attribute name="CIIVA_IDS" value="1172243" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_1_URL" value="http://www.freescale.com/" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="COMPONENT_LINK_3_URL" value="http://cache.freescale.com/files/shared/doc/package_info/98ASA00260D.pdf" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://cache.freescale.com/files/sensors/doc/data_sheet/MPL3115A2.pdf" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_VERSION" value="Rev. 3.0" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL20_PF" value="4 MHz Max." x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="FSCL400_PF" value="400 KHz Max." x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED" value="yes" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORTED_FROM" value="vault" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="IMPORT_TS" value="1521845373" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Freescale Semiconductor" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MPL3115A2" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="65.305" y="12.76" size="1" layer="25"/>
+<attribute name="OPERATING_TEMPERATURE_RANGE" value="-40 to 85 degC" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_DESCRIPTION" value="8-Pin Land Grid Array, Body 5 x 3 mm, Pitch 1.25 mm" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE_VERSION" value="Rev. O" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="PACKING" value="Tray" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="PIN_0_0_7_INSIDE_EDGE" value="clock" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="PREFIX" value="U" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="RELEASE_DATE" value="1435138815" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="ROHS" value="Yes" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_GUID" value="C9CA789F-172F-4FBE-A7EA-5C936E43DE32" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="VAULT_REVISION" value="13F1D4E8-B129-4F1C-B772-6A98733F3276" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="VDD" value="1.95 to 3.6 V" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="VDDIO" value="1.62 to 3.6 V" x="43.18" y="-5.08" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C24" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0805" package3d_urn="urn:adsk.eagle:package:13265/1" value="100nF" x="77.47" y="6.35" smashed="yes">
+<attribute name="NAME" x="76.2" y="7.62" size="1.27" layer="25"/>
+<attribute name="SPICEMODEL" value="NONE" x="39.37" y="-8.89" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="39.37" y="-8.89" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="76.2" y="3.81" size="1.27" layer="27"/>
+</element>
+</elements>
+<signals>
+<signal name="GND">
+<contactref element="C1" pad="2"/>
+<contactref element="C2" pad="2"/>
+<contactref element="C4" pad="2"/>
+<contactref element="P2" pad="3"/>
+<contactref element="P3" pad="3"/>
+<contactref element="C5" pad="2"/>
+<contactref element="P4" pad="3"/>
+<contactref element="C6" pad="2"/>
+<contactref element="JP2" pad="9"/>
+<contactref element="IC1" pad="12"/>
+<contactref element="C3" pad="2"/>
+<contactref element="P1" pad="3"/>
+<contactref element="P5" pad="3"/>
+<contactref element="P6" pad="3"/>
+<contactref element="P7" pad="3"/>
+<contactref element="P8" pad="3"/>
+<contactref element="C7" pad="2"/>
+<contactref element="C8" pad="2"/>
+<contactref element="C10" pad="2"/>
+<contactref element="C11" pad="2"/>
+<contactref element="C12" pad="2"/>
+<contactref element="C9" pad="2"/>
+<contactref element="P9" pad="3"/>
+<contactref element="P10" pad="3"/>
+<contactref element="P11" pad="3"/>
+<contactref element="P12" pad="3"/>
+<contactref element="C13" pad="2"/>
+<contactref element="C14" pad="2"/>
+<contactref element="C16" pad="2"/>
+<contactref element="C17" pad="2"/>
+<contactref element="C18" pad="2"/>
+<contactref element="C15" pad="2"/>
+<contactref element="P13" pad="3"/>
+<contactref element="P14" pad="3"/>
+<contactref element="P15" pad="3"/>
+<contactref element="P16" pad="3"/>
+<contactref element="C19" pad="2"/>
+<contactref element="C20" pad="2"/>
+<contactref element="C22" pad="2"/>
+<contactref element="C23" pad="2"/>
+<contactref element="C24" pad="2"/>
+<contactref element="C21" pad="2"/>
+<wire x1="65.72" y1="6.35" x2="78.32" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="67.505" y1="9.535" x2="65.72" y2="6.35" width="0" layer="19" extent="1-1"/>
+<wire x1="70.8" y1="13.97" x2="67.505" y2="9.535" width="0" layer="19" extent="1-1"/>
+<wire x1="25.595" y1="9.535" x2="70.8" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="72.07" y1="6.35" x2="65.72" y2="6.35" width="0" layer="19" extent="1-1"/>
+<wire x1="9.085" y1="9.535" x2="25.595" y2="9.535" width="0" layer="19" extent="1-1"/>
+<wire x1="78.42" y1="6.35" x2="72.07" y2="6.35" width="0" layer="19" extent="1-1"/>
+<wire x1="77.15" y1="11.43" x2="70.8" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="47.185" y1="9.535" x2="77.15" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="73.24" y1="20.32" x2="9.085" y2="9.535" width="0" layer="19" extent="1-1"/>
+<wire x1="65.72" y1="34.29" x2="73.24" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="67.505" y1="22.235" x2="65.72" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="70.8" y1="41.91" x2="67.505" y2="22.235" width="0" layer="19" extent="1-1"/>
+<wire x1="25.595" y1="22.235" x2="70.8" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="72.07" y1="34.29" x2="65.72" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="9.085" y1="22.235" x2="25.595" y2="22.235" width="0" layer="19" extent="1-1"/>
+<wire x1="78.42" y1="34.29" x2="72.07" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="77.15" y1="41.91" x2="70.8" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="47.185" y1="22.235" x2="77.15" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="65.62" y1="55.88" x2="9.085" y2="22.235" width="0" layer="19" extent="1-1"/>
+<wire x1="65.72" y1="62.23" x2="65.62" y2="55.88" width="0" layer="19" extent="1-1"/>
+<wire x1="64.965" y1="37.475" x2="65.72" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="68.26" y1="69.85" x2="64.965" y2="37.475" width="0" layer="19" extent="1-1"/>
+<wire x1="25.595" y1="37.475" x2="68.26" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="72.07" y1="62.23" x2="65.72" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="9.085" y1="37.475" x2="25.595" y2="37.475" width="0" layer="19" extent="1-1"/>
+<wire x1="78.42" y1="62.23" x2="72.07" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="77.15" y1="69.85" x2="68.26" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="47.185" y1="37.475" x2="77.15" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="25.595" y1="50.175" x2="47.185" y2="37.475" width="0" layer="19" extent="1-1"/>
+<wire x1="9.085" y1="50.175" x2="25.595" y2="50.175" width="0" layer="19" extent="1-1"/>
+<wire x1="64.965" y1="48.905" x2="9.085" y2="50.175" width="0" layer="19" extent="1-1"/>
+<wire x1="45.915" y1="51.445" x2="64.965" y2="48.905" width="0" layer="19" extent="1-1"/>
+<wire x1="-29.53" y1="62.23" x2="45.915" y2="51.445" width="0" layer="19" extent="1-1"/>
+<wire x1="-29.53" y1="68.58" x2="-29.53" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="-23.18" y1="68.58" x2="-29.53" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="-23.18" y1="62.23" x2="-29.53" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.83" y1="62.23" x2="-23.18" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="50.8" y1="76.2" x2="-23.18" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="-41.06" y1="74.93" x2="-29.53" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="59.335" y1="73.025" x2="45.915" y2="51.445" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VDD">
+<contactref element="P1" pad="4"/>
+<contactref element="P1" pad="1"/>
+<contactref element="C1" pad="1"/>
+<contactref element="C2" pad="1"/>
+<contactref element="JP2" pad="1"/>
+<contactref element="R5" pad="2"/>
+<contactref element="R6" pad="2"/>
+<contactref element="R7" pad="2"/>
+<contactref element="IC1" pad="24"/>
+<contactref element="P2" pad="1"/>
+<contactref element="P3" pad="1"/>
+<contactref element="P4" pad="1"/>
+<contactref element="P2" pad="4"/>
+<contactref element="P3" pad="4"/>
+<contactref element="P4" pad="4"/>
+<contactref element="P5" pad="1"/>
+<contactref element="P6" pad="1"/>
+<contactref element="P7" pad="1"/>
+<contactref element="P8" pad="1"/>
+<contactref element="P5" pad="4"/>
+<contactref element="C7" pad="1"/>
+<contactref element="C8" pad="1"/>
+<contactref element="P6" pad="4"/>
+<contactref element="P7" pad="4"/>
+<contactref element="P8" pad="4"/>
+<contactref element="P9" pad="1"/>
+<contactref element="P10" pad="1"/>
+<contactref element="P11" pad="1"/>
+<contactref element="P12" pad="1"/>
+<contactref element="P9" pad="4"/>
+<contactref element="C13" pad="1"/>
+<contactref element="C14" pad="1"/>
+<contactref element="P10" pad="4"/>
+<contactref element="P11" pad="4"/>
+<contactref element="P12" pad="4"/>
+<contactref element="P13" pad="1"/>
+<contactref element="P14" pad="1"/>
+<contactref element="P15" pad="1"/>
+<contactref element="P16" pad="1"/>
+<contactref element="P13" pad="4"/>
+<contactref element="C19" pad="1"/>
+<contactref element="C20" pad="1"/>
+<contactref element="P14" pad="4"/>
+<contactref element="P15" pad="4"/>
+<contactref element="P16" pad="4"/>
+<wire x1="67.505" y1="8.285" x2="76.62" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="67.505" y1="12.035" x2="67.505" y2="8.285" width="0" layer="19" extent="1-1"/>
+<wire x1="9.085" y1="8.285" x2="67.505" y2="12.035" width="0" layer="19" extent="1-1"/>
+<wire x1="9.085" y1="12.035" x2="9.085" y2="8.285" width="0" layer="19" extent="1-1"/>
+<wire x1="68.9" y1="13.97" x2="67.505" y2="12.035" width="0" layer="19" extent="1-1"/>
+<wire x1="25.595" y1="8.285" x2="68.9" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="25.595" y1="12.035" x2="25.595" y2="8.285" width="0" layer="19" extent="1-1"/>
+<wire x1="71.54" y1="20.32" x2="9.085" y2="12.035" width="0" layer="19" extent="1-1"/>
+<wire x1="47.185" y1="8.285" x2="25.595" y2="8.285" width="0" layer="19" extent="1-1"/>
+<wire x1="47.185" y1="12.035" x2="47.185" y2="8.285" width="0" layer="19" extent="1-1"/>
+<wire x1="67.505" y1="20.985" x2="71.54" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="67.505" y1="24.735" x2="67.505" y2="20.985" width="0" layer="19" extent="1-1"/>
+<wire x1="9.085" y1="20.985" x2="67.505" y2="24.735" width="0" layer="19" extent="1-1"/>
+<wire x1="9.085" y1="24.735" x2="9.085" y2="20.985" width="0" layer="19" extent="1-1"/>
+<wire x1="68.9" y1="41.91" x2="67.505" y2="24.735" width="0" layer="19" extent="1-1"/>
+<wire x1="25.595" y1="20.985" x2="68.9" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="25.595" y1="24.735" x2="25.595" y2="20.985" width="0" layer="19" extent="1-1"/>
+<wire x1="63.92" y1="55.88" x2="9.085" y2="24.735" width="0" layer="19" extent="1-1"/>
+<wire x1="47.185" y1="20.985" x2="25.595" y2="20.985" width="0" layer="19" extent="1-1"/>
+<wire x1="47.185" y1="24.735" x2="47.185" y2="20.985" width="0" layer="19" extent="1-1"/>
+<wire x1="64.965" y1="36.225" x2="63.92" y2="55.88" width="0" layer="19" extent="1-1"/>
+<wire x1="64.965" y1="39.975" x2="64.965" y2="36.225" width="0" layer="19" extent="1-1"/>
+<wire x1="9.085" y1="36.225" x2="64.965" y2="39.975" width="0" layer="19" extent="1-1"/>
+<wire x1="9.085" y1="39.975" x2="9.085" y2="36.225" width="0" layer="19" extent="1-1"/>
+<wire x1="66.36" y1="69.85" x2="64.965" y2="39.975" width="0" layer="19" extent="1-1"/>
+<wire x1="25.595" y1="36.225" x2="66.36" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="25.595" y1="39.975" x2="25.595" y2="36.225" width="0" layer="19" extent="1-1"/>
+<wire x1="47.185" y1="36.225" x2="25.595" y2="36.225" width="0" layer="19" extent="1-1"/>
+<wire x1="47.185" y1="39.975" x2="47.185" y2="36.225" width="0" layer="19" extent="1-1"/>
+<wire x1="25.595" y1="48.925" x2="47.185" y2="39.975" width="0" layer="19" extent="1-1"/>
+<wire x1="25.595" y1="52.675" x2="25.595" y2="48.925" width="0" layer="19" extent="1-1"/>
+<wire x1="9.085" y1="48.925" x2="25.595" y2="48.925" width="0" layer="19" extent="1-1"/>
+<wire x1="9.085" y1="52.675" x2="9.085" y2="48.925" width="0" layer="19" extent="1-1"/>
+<wire x1="64.965" y1="47.655" x2="9.085" y2="52.675" width="0" layer="19" extent="1-1"/>
+<wire x1="64.965" y1="51.405" x2="64.965" y2="47.655" width="0" layer="19" extent="1-1"/>
+<wire x1="45.915" y1="53.945" x2="64.965" y2="51.405" width="0" layer="19" extent="1-1"/>
+<wire x1="45.915" y1="50.195" x2="45.915" y2="53.945" width="0" layer="19" extent="1-1"/>
+<wire x1="30.48" y1="76.2" x2="45.915" y2="53.945" width="0" layer="19" extent="1-1"/>
+<wire x1="-42.76" y1="74.93" x2="30.48" y2="76.2" width="0" layer="19" extent="1-1"/>
+<wire x1="24.98" y1="67.31" x2="30.48" y2="76.2" width="0" layer="19" extent="1-1"/>
+<wire x1="22.44" y1="64.77" x2="24.98" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="22.44" y1="72.39" x2="22.44" y2="64.77" width="0" layer="19" extent="1-1"/>
+<wire x1="-18.73" y1="62.23" x2="45.915" y2="53.945" width="0" layer="19" extent="1-1"/>
+<wire x1="49.885" y1="59.055" x2="-18.73" y2="62.23" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
+<contactref element="P1" pad="2"/>
+<contactref element="C3" pad="1"/>
+<wire x1="9.085" y1="51.425" x2="-25.08" y2="62.23" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDA1">
+<contactref element="P1" pad="7"/>
+<contactref element="IC1" pad="9"/>
+<wire x1="11.235" y1="51.425" x2="59.335" y2="69.215" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDA2">
+<contactref element="P2" pad="7"/>
+<contactref element="IC1" pad="8"/>
+<wire x1="59.335" y1="67.945" x2="27.745" y2="51.425" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$6">
+<contactref element="P2" pad="2"/>
+<contactref element="C4" pad="1"/>
+<wire x1="25.595" y1="51.425" x2="-31.43" y2="62.23" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDA3">
+<contactref element="P3" pad="7"/>
+<contactref element="IC1" pad="7"/>
+<wire x1="59.335" y1="66.675" x2="48.065" y2="52.695" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDA4">
+<contactref element="P4" pad="7"/>
+<contactref element="IC1" pad="6"/>
+<wire x1="67.115" y1="50.155" x2="59.335" y2="65.405" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDA5">
+<contactref element="P5" pad="7"/>
+<contactref element="IC1" pad="5"/>
+<wire x1="59.335" y1="64.135" x2="11.235" y2="38.725" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDA6">
+<contactref element="P6" pad="7"/>
+<contactref element="IC1" pad="4"/>
+<wire x1="59.335" y1="62.865" x2="27.745" y2="38.725" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDA7">
+<contactref element="P7" pad="7"/>
+<contactref element="IC1" pad="3"/>
+<wire x1="59.335" y1="61.595" x2="49.335" y2="38.725" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDA8">
+<contactref element="P8" pad="7"/>
+<contactref element="IC1" pad="2"/>
+<wire x1="59.335" y1="60.325" x2="67.115" y2="38.725" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$14">
+<contactref element="P3" pad="2"/>
+<contactref element="C5" pad="1"/>
+<wire x1="45.915" y1="52.695" x2="-25.08" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDA9">
+<contactref element="P9" pad="7"/>
+<contactref element="IC1" pad="23"/>
+<wire x1="49.885" y1="60.325" x2="11.235" y2="23.485" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDA10">
+<contactref element="P10" pad="7"/>
+<contactref element="IC1" pad="22"/>
+<wire x1="49.885" y1="61.595" x2="27.745" y2="23.485" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$15">
+<contactref element="P4" pad="2"/>
+<contactref element="C6" pad="1"/>
+<wire x1="64.965" y1="50.155" x2="-31.43" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDA11">
+<contactref element="P11" pad="7"/>
+<contactref element="IC1" pad="21"/>
+<wire x1="49.885" y1="62.865" x2="49.335" y2="23.485" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDA12">
+<contactref element="P12" pad="7"/>
+<contactref element="IC1" pad="20"/>
+<wire x1="49.885" y1="64.135" x2="69.655" y2="23.485" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDA13">
+<contactref element="P13" pad="7"/>
+<contactref element="IC1" pad="19"/>
+<wire x1="49.885" y1="65.405" x2="11.235" y2="10.785" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDA14">
+<contactref element="P14" pad="7"/>
+<contactref element="IC1" pad="18"/>
+<wire x1="49.885" y1="66.675" x2="27.745" y2="10.785" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDA15">
+<contactref element="P15" pad="7"/>
+<contactref element="IC1" pad="17"/>
+<wire x1="49.885" y1="67.945" x2="49.335" y2="10.785" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDA16">
+<contactref element="P16" pad="7"/>
+<contactref element="IC1" pad="16"/>
+<wire x1="49.885" y1="69.215" x2="69.655" y2="10.785" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDA" class="1">
+<contactref element="JP2" pad="2"/>
+<contactref element="R5" pad="1"/>
+<contactref element="IC1" pad="1"/>
+<wire x1="33.02" y1="76.2" x2="20.74" y2="72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="59.335" y1="59.055" x2="33.02" y2="76.2" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SCL" class="2">
+<contactref element="JP2" pad="3"/>
+<contactref element="R6" pad="1"/>
+<contactref element="P1" pad="8"/>
+<contactref element="P2" pad="8"/>
+<contactref element="P3" pad="8"/>
+<contactref element="P4" pad="8"/>
+<contactref element="P5" pad="8"/>
+<contactref element="P6" pad="8"/>
+<contactref element="P7" pad="8"/>
+<contactref element="P8" pad="8"/>
+<contactref element="P9" pad="8"/>
+<contactref element="P10" pad="8"/>
+<contactref element="P11" pad="8"/>
+<contactref element="P12" pad="8"/>
+<contactref element="P13" pad="8"/>
+<contactref element="P14" pad="8"/>
+<contactref element="P15" pad="8"/>
+<contactref element="P16" pad="8"/>
+<wire x1="11.235" y1="12.035" x2="69.655" y2="12.035" width="0" layer="19" extent="1-1"/>
+<wire x1="27.745" y1="12.035" x2="11.235" y2="12.035" width="0" layer="19" extent="1-1"/>
+<wire x1="49.335" y1="12.035" x2="27.745" y2="12.035" width="0" layer="19" extent="1-1"/>
+<wire x1="69.655" y1="24.735" x2="11.235" y2="12.035" width="0" layer="19" extent="1-1"/>
+<wire x1="11.235" y1="24.735" x2="69.655" y2="24.735" width="0" layer="19" extent="1-1"/>
+<wire x1="27.745" y1="24.735" x2="11.235" y2="24.735" width="0" layer="19" extent="1-1"/>
+<wire x1="49.335" y1="24.735" x2="27.745" y2="24.735" width="0" layer="19" extent="1-1"/>
+<wire x1="67.115" y1="39.975" x2="11.235" y2="24.735" width="0" layer="19" extent="1-1"/>
+<wire x1="11.235" y1="39.975" x2="67.115" y2="39.975" width="0" layer="19" extent="1-1"/>
+<wire x1="27.745" y1="39.975" x2="11.235" y2="39.975" width="0" layer="19" extent="1-1"/>
+<wire x1="49.335" y1="39.975" x2="27.745" y2="39.975" width="0" layer="19" extent="1-1"/>
+<wire x1="27.745" y1="52.675" x2="49.335" y2="39.975" width="0" layer="19" extent="1-1"/>
+<wire x1="11.235" y1="52.675" x2="27.745" y2="52.675" width="0" layer="19" extent="1-1"/>
+<wire x1="67.115" y1="51.405" x2="11.235" y2="52.675" width="0" layer="19" extent="1-1"/>
+<wire x1="48.065" y1="53.945" x2="67.115" y2="51.405" width="0" layer="19" extent="1-1"/>
+<wire x1="35.56" y1="76.2" x2="48.065" y2="53.945" width="0" layer="19" extent="1-1"/>
+<wire x1="20.74" y1="64.77" x2="35.56" y2="76.2" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="S0" class="3">
+<contactref element="JP2" pad="4"/>
+<contactref element="IC1" pad="10"/>
+<wire x1="59.335" y1="70.485" x2="38.1" y2="76.2" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="S1" class="4">
+<contactref element="JP2" pad="5"/>
+<contactref element="IC1" pad="11"/>
+<wire x1="59.335" y1="71.755" x2="40.64" y2="76.2" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="S2" class="5">
+<contactref element="JP2" pad="6"/>
+<contactref element="IC1" pad="14"/>
+<wire x1="49.885" y1="71.755" x2="43.18" y2="76.2" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="S3" class="6">
+<contactref element="JP2" pad="7"/>
+<contactref element="IC1" pad="13"/>
+<wire x1="49.885" y1="73.025" x2="45.72" y2="76.2" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="EN" class="7">
+<contactref element="JP2" pad="8"/>
+<contactref element="R7" pad="1"/>
+<contactref element="IC1" pad="15"/>
+<wire x1="23.28" y1="67.31" x2="48.26" y2="76.2" width="0" layer="19" extent="1-1"/>
+<wire x1="49.885" y1="70.485" x2="48.26" y2="76.2" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$7">
+<contactref element="P5" pad="2"/>
+<contactref element="C9" pad="1"/>
+<wire x1="75.25" y1="69.85" x2="9.085" y2="38.725" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$9">
+<contactref element="P6" pad="2"/>
+<contactref element="C10" pad="1"/>
+<wire x1="25.595" y1="38.725" x2="63.82" y2="62.23" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$11">
+<contactref element="P7" pad="2"/>
+<contactref element="C11" pad="1"/>
+<wire x1="47.185" y1="38.725" x2="70.17" y2="62.23" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$13">
+<contactref element="P8" pad="2"/>
+<contactref element="C12" pad="1"/>
+<wire x1="76.52" y1="62.23" x2="64.965" y2="38.725" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$21">
+<contactref element="P9" pad="2"/>
+<contactref element="C15" pad="1"/>
+<wire x1="75.25" y1="41.91" x2="9.085" y2="23.485" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$30">
+<contactref element="P10" pad="2"/>
+<contactref element="C16" pad="1"/>
+<wire x1="25.595" y1="23.485" x2="63.82" y2="34.29" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$31">
+<contactref element="P11" pad="2"/>
+<contactref element="C17" pad="1"/>
+<wire x1="47.185" y1="23.485" x2="70.17" y2="34.29" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$32">
+<contactref element="P12" pad="2"/>
+<contactref element="C18" pad="1"/>
+<wire x1="76.52" y1="34.29" x2="67.505" y2="23.485" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$45">
+<contactref element="P13" pad="2"/>
+<contactref element="C21" pad="1"/>
+<wire x1="75.25" y1="11.43" x2="9.085" y2="10.785" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$46">
+<contactref element="P14" pad="2"/>
+<contactref element="C22" pad="1"/>
+<wire x1="25.595" y1="10.785" x2="63.82" y2="6.35" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$47">
+<contactref element="P15" pad="2"/>
+<contactref element="C23" pad="1"/>
+<wire x1="47.185" y1="10.785" x2="70.17" y2="6.35" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$48">
+<contactref element="P16" pad="2"/>
+<contactref element="C24" pad="1"/>
+<wire x1="76.52" y1="6.35" x2="67.505" y2="10.785" width="0" layer="19" extent="1-1"/>
+</signal>
+</signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
+</board>
+</drawing>
+<compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
+</eagle>
